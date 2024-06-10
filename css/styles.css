@@ -1,0 +1,266 @@
+.about-page {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; 
+  color: white;
+  background-color: #0b2d39;
+  font-family: 'Open Sans';
+}
+
+.homebase-page {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; 
+  color: white;
+  background-color: #0b2d39;
+  font-family: 'Open Sans';
+}
+
+.news-page {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; 
+  color: white;
+  background-color: #0b2d39;
+  font-family: 'Open Sans';
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #039;
+  color: white;
+  padding: 20px;
+  font-family: 'Open Sans';
+}
+
+.logo img {
+  width: 70px;
+  height: auto;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
+
+.nav-menu li:last-child {
+  margin-right: 0;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #0b2d39;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #039;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+@media screen and (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #039;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+  }
+}
+
+nav a:hover {
+  color: yellow;
+  font-weight: bold;
+}
+
+nav div img {
+  width: 50px;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+.main-homebase {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 18px;
+  overflow: auto;
+  font-family: 'Open Sans';
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+ 
+aside {
+  float: right;
+    padding: 20px;
+  border-radius: 5px;
+  background-color: #039;
+  color: white;
+}
+
+aside section {
+  margin-top: 20px;
+}
+
+aside h3 {
+  margin-top: 0;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #039;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+  main section {
+    flex-direction: column;
+  }
+
+  article,
+  aside {
+    flex: 1; 
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  aside {
+    order: 2;
+    margin-top: 0; 
+  }
+}
+
+.profile header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #039; 
+
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card h2 {
+  color: white;
+}
+
+.card p {
+  color: white; 
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 500px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-firhan,
+.about-prawira {
+    background-color: #039;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.about-firhan h2,
+.about-prawira h2 {
+    color: white;
+}
+
+.about-firhan p,
+.about-prawira p {
+    color: white;
+}
+
+.aboutfeatured-image {
+    width: 40%;
+    max-height: 520px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
